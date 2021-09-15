@@ -1,0 +1,71 @@
+Begin
+	prompt "enter a number" and store in num
+	if(num<18) then
+		display "you are not eligible for vote"
+	elseif(num > 60)
+		display "you are a senior citizen"
+	else(num>=18 && num=<60)
+		display " you are eligible for vote
+	EndIF
+end
+////
+Create a program to check whether a number is divisble by 2,3 and 5
+
+BEGIN
+	prompt "enter a num" and store in num
+	if(num%2==0 && num%3==0 && num%5==0)
+        	Display " Divisible by 2,3 and 5"
+	else
+        	Display "Not divisible by 2,3,5"
+    ENDIF
+END
+/////
+
+
+
+whileloop
+
+BEGIN
+	declare num as integer
+	prompt "enter a number" and store in num
+	sum=o, index= 1
+	while(index<=5) do
+		sum = sum+index
+		index = index+1
+END
+////
+
+BEGIN 
+	declare i as integer
+	for i in range 1 to 10
+	if(i/2)
+		diplay "even number"
+	else
+		display "odd number"
+	ENDIF
+	ENDFOR
+END
+////
+
+using arrays and for chack the number is prime or not:
+
+Declare numbers[5] as integerarrays
+Declare i,n as integer
+Declare num as integer
+for i =0 to 4
+ACCEPT numbers[i]
+for i = 0 to 4
+num =0
+for n= 2 to i
+if(numbers[i]%n==0)
+num = num+1
+end if
+end for
+if(num == 0)
+display numbers[i] is prime
+else 
+display numbers[i] is not prime
+end if
+end for
+end
+////
